@@ -1,0 +1,5 @@
+* Supplemental Bill of Materials
+#+RESULTS: supplemental-parts
+| Item | Quantity | Manufacturer | Manufacturer Part Number | Vendor   | Vendor Part Number | Description                  |
+|------+----------+--------------+--------------------------+----------+--------------------+------------------------------|
+#+tblfm: $1=@#-1
