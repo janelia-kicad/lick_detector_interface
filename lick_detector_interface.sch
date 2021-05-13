@@ -16,395 +16,309 @@ $EndDescr
 $Comp
 L lick_detector_interface:FIDUCIAL FID1
 U 1 1 5EFF6F31
-P 7200 2900
-F 0 "FID1" H 7278 2946 50  0000 L CNN
-F 1 "FIDUCIAL" H 7278 2855 50  0000 L CNN
-F 2 "lick_detector_interface:FIDUCIAL" H 7400 2900 50  0001 C CNN
-F 3 "" H 7400 2900 50  0001 C CNN
-	1    7200 2900
+P 700 1150
+F 0 "FID1" H 778 1196 50  0000 L CNN
+F 1 "FIDUCIAL" H 778 1105 50  0000 L CNN
+F 2 "lick_detector_interface:FIDUCIAL" H 900 1150 50  0001 C CNN
+F 3 "" H 900 1150 50  0001 C CNN
+	1    700  1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L user_power:GND #PWR017
-U 1 1 609215E6
-P 5900 4400
-F 0 "#PWR017" H 5900 4150 50  0001 C CNN
-F 1 "GND" H 5905 4227 50  0000 C CNN
-F 2 "" H 5900 4400 50  0001 C CNN
-F 3 "" H 5900 4400 50  0001 C CNN
-	1    5900 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 4300 5600 4350
-Wire Wire Line
-	5600 4350 5800 4350
-Wire Wire Line
-	6200 4350 6200 4300
-Wire Wire Line
-	5800 4300 5800 4350
-Connection ~ 5800 4350
-Wire Wire Line
-	5800 4350 5900 4350
-Wire Wire Line
-	6000 4300 6000 4350
-Connection ~ 6000 4350
-Wire Wire Line
-	6000 4350 6200 4350
-Wire Wire Line
-	5900 4400 5900 4350
-Connection ~ 5900 4350
-Wire Wire Line
-	5900 4350 6000 4350
-$Comp
-L user_power:GND #PWR06
-U 1 1 60922244
-P 4900 2700
-F 0 "#PWR06" H 4900 2450 50  0001 C CNN
-F 1 "GND" H 4905 2527 50  0000 C CNN
-F 2 "" H 4900 2700 50  0001 C CNN
-F 3 "" H 4900 2700 50  0001 C CNN
-	1    4900 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:GND #PWR07
-U 1 1 60922707
-P 6700 2750
-F 0 "#PWR07" H 6700 2500 50  0001 C CNN
-F 1 "GND" H 6705 2577 50  0000 C CNN
-F 2 "" H 6700 2750 50  0001 C CNN
-F 3 "" H 6700 2750 50  0001 C CNN
-	1    6700 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 2650 4900 2700
-Wire Wire Line
-	6700 2700 6700 2750
-$Comp
-L lick_detector_interface:10uF_0402_POL C1
-U 1 1 60925C65
-P 4550 2450
-F 0 "C1" H 4638 2480 50  0000 L CNN
-F 1 "10uF" H 4650 2400 30  0000 L CNN
-F 2 "lick_detector_interface:SM0402_POL" H 4460 2420 60  0001 C CNN
-F 3 "" H 4560 2520 60  0001 C CNN
-F 4 "Digi-Key" H 4660 2620 60  0001 C CNN "Vendor"
-F 5 "478-5343-1-ND" H 4760 2720 60  0001 C CNN "Vendor Part Number"
-F 6 "CAP TANT 10UF 20% 6.3V" H 4860 2820 60  0001 C CNN "Description"
-F 7 "AVX Corporation" H 4550 2450 50  0001 C CNN "Manufacturer"
-F 8 "TLCK106M006QTA" H 4550 2450 50  0001 C CNN "Manufacturer Part Number"
-F 9 "0402" H 4550 2450 50  0001 C CNN "Package"
-	1    4550 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 3500 5150 3500
-Text Label 5100 3500 2    50   ~ 0
-~CS
-Wire Wire Line
-	5150 3450 5150 3500
-Connection ~ 5150 3500
-Wire Wire Line
-	5150 3500 5100 3500
-Wire Wire Line
-	5200 3600 5100 3600
-Text Label 5100 3600 2    50   ~ 0
-MOSI
-Wire Wire Line
-	5200 3700 5100 3700
-Text Label 5100 3700 2    50   ~ 0
-SCK
-Wire Wire Line
-	5600 2900 5600 2850
 $Comp
 L user_power:VAA #PWR010
 U 1 1 6092B668
-P 3650 2150
-F 0 "#PWR010" H 3650 2000 50  0001 C CNN
-F 1 "VAA" H 3665 2323 50  0000 C CNN
-F 2 "" H 3650 2150 50  0001 C CNN
-F 3 "" H 3650 2150 50  0001 C CNN
-	1    3650 2150
+P 1700 1050
+F 0 "#PWR010" H 1700 900 50  0001 C CNN
+F 1 "VAA" H 1715 1223 50  0000 C CNN
+F 2 "" H 1700 1050 50  0001 C CNN
+F 3 "" H 1700 1050 50  0001 C CNN
+	1    1700 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L user_power:GND #PWR014
 U 1 1 6092BEB0
-P 3650 2550
-F 0 "#PWR014" H 3650 2300 50  0001 C CNN
-F 1 "GND" H 3655 2377 50  0000 C CNN
-F 2 "" H 3650 2550 50  0001 C CNN
-F 3 "" H 3650 2550 50  0001 C CNN
-	1    3650 2550
+P 1700 1450
+F 0 "#PWR014" H 1700 1200 50  0001 C CNN
+F 1 "GND" H 1705 1277 50  0000 C CNN
+F 2 "" H 1700 1450 50  0001 C CNN
+F 3 "" H 1700 1450 50  0001 C CNN
+	1    1700 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 3500 6650 3500
-Text Label 6650 3500 0    50   ~ 0
+	8200 2250 8150 2250
+Wire Wire Line
+	8200 2350 8150 2350
+Wire Wire Line
+	8200 2450 8150 2450
+Wire Wire Line
+	8200 2550 8150 2550
+Wire Wire Line
+	8200 2650 8150 2650
+Wire Wire Line
+	8200 2750 8150 2750
+Text Label 8150 2850 2    50   ~ 0
+INT1_0
+Text Label 8150 2750 2    50   ~ 0
+INT2_0
+Text Label 8150 2150 2    50   ~ 0
+~CS_0
+Text Label 8150 2650 2    50   ~ 0
 MISO
-Wire Wire Line
-	6600 3600 6650 3600
-Wire Wire Line
-	6600 3700 6650 3700
-Text Label 6650 3600 0    50   ~ 0
-INT1
-Text Label 6650 3700 0    50   ~ 0
-INT2
-Wire Wire Line
-	3800 3300 3850 3300
-Wire Wire Line
-	3800 3400 3850 3400
-Wire Wire Line
-	3800 3500 3850 3500
-Wire Wire Line
-	3800 3600 3850 3600
-Wire Wire Line
-	3800 3700 3850 3700
-Wire Wire Line
-	3800 3800 3850 3800
-$Comp
-L user_power:GND #PWR05
-U 1 1 60953F26
-P 4550 2600
-F 0 "#PWR05" H 4550 2350 50  0001 C CNN
-F 1 "GND" H 4555 2427 50  0000 C CNN
-F 2 "" H 4550 2600 50  0001 C CNN
-F 3 "" H 4550 2600 50  0001 C CNN
-	1    4550 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:VAA #PWR03
-U 1 1 60954E23
-P 4550 2300
-F 0 "#PWR03" H 4550 2150 50  0001 C CNN
-F 1 "VAA" H 4565 2473 50  0000 C CNN
-F 2 "" H 4550 2300 50  0001 C CNN
-F 3 "" H 4550 2300 50  0001 C CNN
-	1    4550 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:VAA #PWR01
-U 1 1 609558F3
-P 4900 2200
-F 0 "#PWR01" H 4900 2050 50  0001 C CNN
-F 1 "VAA" H 4915 2373 50  0000 C CNN
-F 2 "" H 4900 2200 50  0001 C CNN
-F 3 "" H 4900 2200 50  0001 C CNN
-	1    4900 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 2200 4900 2250
-$Comp
-L user_power:VAA #PWR04
-U 1 1 6095747A
-P 5600 2250
-F 0 "#PWR04" H 5600 2100 50  0001 C CNN
-F 1 "VAA" H 5615 2423 50  0000 C CNN
-F 2 "" H 5600 2250 50  0001 C CNN
-F 3 "" H 5600 2250 50  0001 C CNN
-	1    5600 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 2250 5600 2300
-$Comp
-L user_power:VAA #PWR02
-U 1 1 60958933
-P 6700 2250
-F 0 "#PWR02" H 6700 2100 50  0001 C CNN
-F 1 "VAA" H 6715 2423 50  0000 C CNN
-F 2 "" H 6700 2250 50  0001 C CNN
-F 3 "" H 6700 2250 50  0001 C CNN
-	1    6700 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:VAA #PWR08
-U 1 1 60958FBA
-P 6200 2850
-F 0 "#PWR08" H 6200 2700 50  0001 C CNN
-F 1 "VAA" H 6215 3023 50  0000 C CNN
-F 2 "" H 6200 2850 50  0001 C CNN
-F 3 "" H 6200 2850 50  0001 C CNN
-	1    6200 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 2250 6700 2300
-Wire Wire Line
-	6200 2850 6200 2900
-$Comp
-L lick_detector_interface:10.0_0201 R1
-U 1 1 6095D6DE
-P 5600 2550
-F 0 "R1" H 5650 2550 40  0000 L CNN
-F 1 "10.0" V 5600 2550 40  0000 C CNN
-F 2 "lick_detector_interface:SM0201" V 5530 2550 30  0001 C CNN
-F 3 "" H 5600 2550 30  0000 C CNN
-F 4 "Digi-Key" V 5780 2650 60  0001 C CNN "Vendor"
-F 5 "311-10NCT-ND" V 5880 2750 60  0001 C CNN "Vendor Part Number"
-F 6 "RES SMD 10 OHM 5% 1/20W" V 5980 2850 60  0001 C CNN "Description"
-F 7 "0201" H 5600 2550 50  0001 C CNN "Package"
-F 8 "Yageo" H 5600 2550 50  0001 C CNN "Manufacturer"
-F 9 "RC0201JR-0710RL" H 5600 2550 50  0001 C CNN "Manufacturer Part Number"
-	1    5600 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L lick_detector_interface:0.1uF_0201 C2
-U 1 1 6096968C
-P 4900 2450
-F 0 "C2" H 5015 2480 40  0000 L CNN
-F 1 "0.1uF" H 5015 2412 30  0000 L CNN
-F 2 "lick_detector_interface:SM0201" H 4938 2300 30  0001 C CNN
-F 3 "" H 4900 2450 60  0001 C CNN
-F 4 "Digi-Key" H 5000 2650 60  0001 C CNN "Vendor"
-F 5 "445-13671-1-ND" H 5100 2750 60  0001 C CNN "Vendor Part Number"
-F 6 "CAP CER 0.1UF 25V X5R" H 5200 2850 60  0001 C CNN "Description"
-F 7 "0201" H 4900 2450 50  0001 C CNN "Package"
-F 8 "TDK Corporation" H 4900 2450 50  0001 C CNN "Manufacturer"
-F 9 "C0603X5R1E104K030BB" H 4900 2450 50  0001 C CNN "Manufacturer Part Number"
-	1    4900 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L lick_detector_interface:0.1uF_0201 C3
-U 1 1 60969EAD
-P 6700 2500
-F 0 "C3" H 6815 2530 40  0000 L CNN
-F 1 "0.1uF" H 6815 2462 30  0000 L CNN
-F 2 "lick_detector_interface:SM0201" H 6738 2350 30  0001 C CNN
-F 3 "" H 6700 2500 60  0001 C CNN
-F 4 "Digi-Key" H 6800 2700 60  0001 C CNN "Vendor"
-F 5 "445-13671-1-ND" H 6900 2800 60  0001 C CNN "Vendor Part Number"
-F 6 "CAP CER 0.1UF 25V X5R" H 7000 2900 60  0001 C CNN "Description"
-F 7 "0201" H 6700 2500 50  0001 C CNN "Package"
-F 8 "TDK Corporation" H 6700 2500 50  0001 C CNN "Manufacturer"
-F 9 "C0603X5R1E104K030BB" H 6700 2500 50  0001 C CNN "Manufacturer Part Number"
-	1    6700 2500
-	1    0    0    -1  
-$EndComp
-Text Label 3850 3900 0    50   ~ 0
-INT1
-Text Label 3850 3800 0    50   ~ 0
-INT2
-Text Label 3850 3200 0    50   ~ 0
-~CS
-Text Label 3850 3700 0    50   ~ 0
-MISO
-Text Label 3850 3600 0    50   ~ 0
+Text Label 8150 2550 2    50   ~ 0
 MOSI
-Text Label 3850 3500 0    50   ~ 0
+Text Label 8150 2450 2    50   ~ 0
 SCK
 $Comp
 L user_power:PWR_FLAG #FLG0101
 U 1 1 60997ECB
-P 3800 2050
-F 0 "#FLG0101" H 3800 2125 50  0001 C CNN
-F 1 "PWR_FLAG" H 3800 2223 50  0000 C CNN
-F 2 "" H 3800 2050 50  0001 C CNN
-F 3 "~" H 3800 2050 50  0001 C CNN
-	1    3800 2050
+P 1850 950
+F 0 "#FLG0101" H 1850 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1123 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "~" H 1850 950 50  0001 C CNN
+	1    1850 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L user_power:PWR_FLAG #FLG0102
 U 1 1 609992D6
-P 3700 2500
-F 0 "#FLG0102" H 3700 2575 50  0001 C CNN
-F 1 "PWR_FLAG" H 3700 2673 50  0000 C CNN
-F 2 "" H 3700 2500 50  0001 C CNN
-F 3 "~" H 3700 2500 50  0001 C CNN
-	1    3700 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:PWR_FLAG #FLG0103
-U 1 1 609A1082
-P 5350 2800
-F 0 "#FLG0103" H 5350 2875 50  0001 C CNN
-F 1 "PWR_FLAG" H 5350 2973 50  0000 C CNN
-F 2 "" H 5350 2800 50  0001 C CNN
-F 3 "~" H 5350 2800 50  0001 C CNN
-	1    5350 2800
+P 1750 1400
+F 0 "#FLG0102" H 1750 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 1573 50  0000 C CNN
+F 2 "" H 1750 1400 50  0001 C CNN
+F 3 "~" H 1750 1400 50  0001 C CNN
+	1    1750 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 2800 5350 2850
+	8200 2150 8150 2150
 Wire Wire Line
-	5350 2850 5600 2850
-Connection ~ 5600 2850
-Wire Wire Line
-	5600 2850 5600 2800
-$Comp
-L lick_detector_interface:ADXL313 U1
-U 1 1 60903CFF
-P 5900 3600
-F 0 "U1" H 5900 4150 60  0000 C CNN
-F 1 "ADXL313" H 5900 3600 60  0000 C CNN
-F 2 "lick_detector_interface:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm" H 5900 3600 60  0001 C CNN
-F 3 "" H 5950 6350 60  0000 C CNN
-F 4 "Digi-Key" H 5900 3600 60  0001 C CNN "Vendor"
-F 5 "ADXL313WACPZ-RL7CT-ND" H 5900 3600 60  0001 C CNN "Vendor Part Number"
-F 6 "ACCEL 0.5-4G I2C/SPI 32LFCSP" H 5900 3600 60  0001 C CNN "Description"
-F 7 "1" H 5900 3600 50  0001 C CNN "Quantity"
-F 8 "Analog Devices Inc" H 5900 3600 50  0001 C CNN "Manufacturer"
-F 9 "ADXL313WACPZ-RL7" H 5900 3600 50  0001 C CNN "Manufacturer Part Number"
-	1    5900 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L lick_detector_interface:CONN_FFC_8_RA P1
-U 1 1 609C481B
-P 3500 3550
-F 0 "P1" H 3500 3100 60  0000 C CNN
-F 1 "CONN_FFC_8_RA" V 3500 3550 60  0000 C CNN
-F 2 "lick_detector_interface:Molex_FFC_1x8_P0.5mm_RA" H 3500 4600 60  0001 C CNN
-F 3 "" H 3550 6300 60  0000 C CNN
-F 4 "Digi-Key" H 3500 4700 60  0001 C CNN "Vendor"
-F 5 "WM1388CT-ND" H 3500 4800 60  0001 C CNN "Vendor Part Number"
-F 6 "CONN FFC FPC 8POS 0.50MM R/A" H 3500 4900 60  0001 C CNN "Description"
-F 7 "1" H 3500 3550 50  0001 C CNN "Quantity"
-F 8 "Molex" H 3500 3550 50  0001 C CNN "Manufacturer"
-F 9 "5034800800" H 3500 3550 50  0001 C CNN "Manufacturer Part Number"
-	1    3500 3550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3800 3200 3850 3200
-Wire Wire Line
-	3800 3900 3850 3900
-Text Label 3850 3400 0    50   ~ 0
+	8200 2850 8150 2850
+Text Label 8150 2350 2    50   ~ 0
 VAA
-Text Label 3850 3300 0    50   ~ 0
+Text Label 8150 2250 2    50   ~ 0
+GND
+Text Label 1650 1100 2    50   ~ 0
+VAA
+Text Label 1650 1400 2    50   ~ 0
 GND
 Wire Wire Line
-	4550 2300 4550 2350
+	1650 1100 1700 1100
 Wire Wire Line
-	4550 2550 4550 2600
-Text Label 3600 2200 2    50   ~ 0
+	1700 1100 1700 1050
+Wire Wire Line
+	1650 1400 1700 1400
+Wire Wire Line
+	1700 1400 1700 1450
+Wire Wire Line
+	1700 1400 1750 1400
+Connection ~ 1700 1400
+Wire Wire Line
+	1700 1100 1850 1100
+Wire Wire Line
+	1850 1100 1850 950 
+Connection ~ 1700 1100
+$Comp
+L lick_detector_interface:CONN_FFC_8_VERT P?
+U 1 1 609DD3D3
+P 8500 2500
+F 0 "P?" H 8500 2950 60  0000 C CNN
+F 1 "CONN_FFC_8_VERT" V 8500 2500 60  0000 C CNN
+F 2 "lick_detector_interface:Molex_FFC_1x8_P0.5mm_Vertical" H 8500 3550 60  0001 C CNN
+F 3 "" H 8550 5250 60  0000 C CNN
+F 4 "Digi-Key" H 8500 3650 60  0001 C CNN "Vendor"
+F 5 "WM6757CT-ND" H 8500 3750 60  0001 C CNN "Vendor Part Number"
+F 6 "CONN FFC VERT 8POS 0.50MM SMD" H 8500 3850 60  0001 C CNN "Description"
+F 7 "1" H 8500 2500 50  0001 C CNN "Quantity"
+F 8 "Molex" H 8500 2500 50  0001 C CNN "Manufacturer"
+F 9 "0525590853" H 8500 2500 50  0001 C CNN "Manufacturer Part Number"
+	1    8500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1950 2500 1950
+Wire Wire Line
+	5050 2150 5100 2150
+Wire Wire Line
+	5050 3250 5100 3250
+Wire Wire Line
+	2550 3150 2500 3150
+Wire Wire Line
+	2550 3250 2500 3250
+Wire Wire Line
+	2550 2950 2500 2950
+Text Label 2500 2850 2    50   ~ 0
+INT1_0
+Text Label 2500 2950 2    50   ~ 0
+INT2_0
+Text Label 2500 3050 2    50   ~ 0
+~CS_0
+Text Label 2500 3250 2    50   ~ 0
+MISO
+Text Label 2500 3150 2    50   ~ 0
+MOSI
+Text Label 5100 3250 0    50   ~ 0
+SCK
+Wire Wire Line
+	2550 3050 2500 3050
+Wire Wire Line
+	2550 2850 2500 2850
+Text Label 5100 2150 0    50   ~ 0
 VAA
-Text Label 3600 2500 2    50   ~ 0
+Text Label 2500 1950 2    50   ~ 0
 GND
+$Comp
+L lick_detector_interface:TEENSY_4.1 TEENSY?
+U 1 1 609F082F
+P 3800 2600
+F 0 "TEENSY?" H 3800 3497 60  0000 C CNN
+F 1 "TEENSY_4.1" H 3800 3391 60  0000 C CNN
+F 2 "lick_detector_interface:TEENSY_4.1" H 3800 3650 60  0001 C CNN
+F 3 "" H 3850 5350 60  0000 C CNN
+F 4 "Digi-Key" H 3800 3750 60  0001 C CNN "Vendor"
+F 5 "ED90331-ND" H 3800 3850 60  0001 C CNN "Vendor Part Number"
+F 6 "CONN PIN RCPT .025-.037 SOLDER" H 3800 3950 60  0001 C CNN "Description"
+F 7 "48" H 3800 2600 50  0001 C CNN "Quantity"
+F 8 "Mill-Max Manufacturing Corp." H 3800 2600 50  0001 C CNN "Manufacturer"
+F 9 "0305-0-15-15-47-27-10-0" H 3800 2600 50  0001 C CNN "Manufacturer Part Number"
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3600 2200 3650 2200
+	2550 2650 2500 2650
+Text Label 2500 2550 2    50   ~ 0
+INT1_1
+Text Label 2500 2650 2    50   ~ 0
+INT2_1
+Text Label 2500 2750 2    50   ~ 0
+~CS_1
 Wire Wire Line
-	3650 2200 3650 2150
+	2550 2750 2500 2750
 Wire Wire Line
-	3600 2500 3650 2500
+	2550 2550 2500 2550
 Wire Wire Line
-	3650 2500 3650 2550
+	2550 2350 2500 2350
+Text Label 2500 2250 2    50   ~ 0
+INT1_2
+Text Label 2500 2350 2    50   ~ 0
+INT2_2
+Text Label 2500 2450 2    50   ~ 0
+~CS_2
 Wire Wire Line
-	3650 2500 3700 2500
-Connection ~ 3650 2500
+	2550 2450 2500 2450
 Wire Wire Line
-	3650 2200 3800 2200
+	2550 2250 2500 2250
 Wire Wire Line
-	3800 2200 3800 2050
-Connection ~ 3650 2200
+	5050 3050 5100 3050
+Text Label 5100 3150 0    50   ~ 0
+INT1_3
+Text Label 5100 3050 0    50   ~ 0
+INT2_3
+Text Label 5100 2950 0    50   ~ 0
+~CS_3
+Wire Wire Line
+	5050 2950 5100 2950
+Wire Wire Line
+	5050 3150 5100 3150
+Wire Wire Line
+	5050 2750 5100 2750
+Text Label 5100 2850 0    50   ~ 0
+INT1_4
+Text Label 5100 2750 0    50   ~ 0
+INT2_4
+Text Label 5100 2650 0    50   ~ 0
+~CS_4
+Wire Wire Line
+	5050 2650 5100 2650
+Wire Wire Line
+	5050 2850 5100 2850
+Wire Wire Line
+	5050 2450 5100 2450
+Text Label 5100 2550 0    50   ~ 0
+INT1_5
+Text Label 5100 2450 0    50   ~ 0
+INT2_5
+Text Label 5100 2350 0    50   ~ 0
+~CS_5
+Wire Wire Line
+	5050 2350 5100 2350
+Wire Wire Line
+	5050 2550 5100 2550
+Wire Wire Line
+	2550 4150 2500 4150
+Text Label 2500 4050 2    50   ~ 0
+INT1_6
+Text Label 2500 4150 2    50   ~ 0
+INT2_6
+Text Label 2500 4250 2    50   ~ 0
+~CS_6
+Wire Wire Line
+	2550 4250 2500 4250
+Wire Wire Line
+	2550 4050 2500 4050
+Wire Wire Line
+	2550 3850 2500 3850
+Text Label 2500 3750 2    50   ~ 0
+INT1_7
+Text Label 2500 3850 2    50   ~ 0
+INT2_7
+Text Label 2500 3950 2    50   ~ 0
+~CS_7
+Wire Wire Line
+	2550 3950 2500 3950
+Wire Wire Line
+	2550 3750 2500 3750
+Wire Wire Line
+	2550 3550 2500 3550
+Text Label 2500 3450 2    50   ~ 0
+INT1_8
+Text Label 2500 3550 2    50   ~ 0
+INT2_8
+Text Label 2500 3650 2    50   ~ 0
+~CS_8
+Wire Wire Line
+	2550 3650 2500 3650
+Wire Wire Line
+	2550 3450 2500 3450
+Wire Wire Line
+	5050 4150 5100 4150
+Text Label 5100 4250 0    50   ~ 0
+INT1_9
+Text Label 5100 4150 0    50   ~ 0
+INT2_9
+Text Label 5100 4050 0    50   ~ 0
+~CS_9
+Wire Wire Line
+	5050 4050 5100 4050
+Wire Wire Line
+	5050 4250 5100 4250
+Wire Wire Line
+	5050 3850 5100 3850
+Text Label 5100 3950 0    50   ~ 0
+INT1_10
+Text Label 5100 3850 0    50   ~ 0
+INT2_10
+Text Label 5100 3750 0    50   ~ 0
+~CS_10
+Wire Wire Line
+	5050 3750 5100 3750
+Wire Wire Line
+	5050 3950 5100 3950
+Wire Wire Line
+	5050 3550 5100 3550
+Text Label 5100 3650 0    50   ~ 0
+INT1_11
+Text Label 5100 3550 0    50   ~ 0
+INT2_11
+Text Label 5100 3450 0    50   ~ 0
+~CS_11
+Wire Wire Line
+	5050 3450 5100 3450
+Wire Wire Line
+	5050 3650 5100 3650
+NoConn ~ 5050 2250
+NoConn ~ 2550 2150
+NoConn ~ 2550 2050
 $EndSCHEMATC
