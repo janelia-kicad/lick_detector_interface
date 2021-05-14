@@ -1,0 +1,8 @@
+# Created 2021-05-14 Fri 12:59
+* Bill of Materials
+#+results: pcb-parts
+| Item | Reference(s)                           | Quantity | Manufacturer                 | Manufacturer Part Number | Vendor   | Vendor Part Number | Description                    |
+|------+----------------------------------------+----------+------------------------------+--------------------------+----------+--------------------+--------------------------------|
+|    1 | P1 P10 P11 P12 P2 P3 P4 P5 P6 P7 P8 P9 |       12 | Molex                        |               0525590853 | Digi-Key | WM6757CT-ND        | CONN FFC VERT 8POS 0.50MM SMD  |
+|    2 | TEENSY1                                |       48 | Mill-Max Manufacturing Corp. |  0305-0-15-15-47-27-10-0 | Digi-Key | ED90331-ND         | CONN PIN RCPT .025-.037 SOLDER |
+|      | FID1 FID2 FID3 FID4 MH1 MH2 MH3 MH4    |        8 |                              |                          |          |                    |                                |

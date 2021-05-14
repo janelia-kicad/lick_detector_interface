@@ -1,0 +1,16 @@
+* Header                                                           :noexport:
+
+  #+MACRO: name lick_detector_interface
+  #+MACRO: version 1.0
+  #+MACRO: license Open-Source Hardware
+  #+MACRO: url https://github.com/janelia-kicad/lick_detector_interface
+  #+AUTHOR: Peter Polidoro
+  #+EMAIL: peterpolidoro@gmail.com
+
+* Description
+
+  This board connects a Teensy 4.1 to 12 lick_detector boards.
+
+* Assembly Instructions
+
+  - Solder surface mount and through hole components onto the pcb.

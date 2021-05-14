@@ -1,0 +1,84 @@
+# Created 2021-05-14 Fri 12:59
+#+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
+* Repository Information
+
+- Name :: lick_detector_interface
+- Version :: 1.0
+- License :: Open-Source Hardware
+- URL :: https://github.com/janelia-kicad/lick_detector_interface
+- Author :: Peter Polidoro
+- Email :: peterpolidoro@gmail.com
+
+** Description
+
+This board connects a Teensy 4.1 to 12 lick_detector boards.
+
+* Images
+
+* Schematic
+
+[[file:./schematic/lick_detector_interface.pdf][./schematic/lick_detector_interface.pdf]]
+
+[[file:./schematic/images/schematic00.png]]
+
+[[file:./schematic/images/schematic01.png]]
+
+[[file:./schematic/images/schematic02.png]]
+
+[[file:./schematic/images/schematic03.png]]
+
+[[file:./schematic/images/schematic04.png]]
+
+[[file:./schematic/images/schematic05.png]]
+
+[[file:./schematic/images/schematic06.png]]
+
+[[file:./schematic/images/schematic07.png]]
+
+[[file:./schematic/images/schematic08.png]]
+
+[[file:./schematic/images/schematic09.png]]
+
+[[file:./schematic/images/schematic10.png]]
+
+[[file:./schematic/images/schematic11.png]]
+
+[[file:./schematic/images/schematic12.png]]
+
+* Gerbers
+
+[[file:./gerbers/images/gerbers00.png]]
+
+[[file:./gerbers/images/gerbers01.png]]
+
+* Bill of Materials
+
+** PCB Parts
+
+| Item | Reference(s)                           | Quantity | Manufacturer                 | Manufacturer Part Number | Vendor   | Vendor Part Number | Description                    |
+|------+----------------------------------------+----------+------------------------------+--------------------------+----------+--------------------+--------------------------------|
+|    1 | P1 P10 P11 P12 P2 P3 P4 P5 P6 P7 P8 P9 |       12 | Molex                        |               0525590853 | Digi-Key | WM6757CT-ND        | CONN FFC VERT 8POS 0.50MM SMD  |
+|    2 | TEENSY1                                |       48 | Mill-Max Manufacturing Corp. |  0305-0-15-15-47-27-10-0 | Digi-Key | ED90331-ND         | CONN PIN RCPT .025-.037 SOLDER |
+|      | FID1 FID2 FID3 FID4 MH1 MH2 MH3 MH4    |        8 |                              |                          |          |                    |                                |
+
+** Supplemental Parts
+
+| Item | Quantity | Manufacturer | Manufacturer Part Number | Vendor | Vendor Part Number | Description |
+|------+----------+--------------+--------------------------+--------+--------------------+-------------|
+#+TBLFM: $1=@#-1
+
+** Vendor Parts Lists
+
+[[file:./bom/Digi-Key_parts.csv][./bom/Digi-Key_parts.csv]]
+
+* Supplemental Documentation
+
+** Assembly Instructions
+
+- Solder surface mount and through hole components onto the pcb.
+
+* Manufacturing Archive
+
+Send manufacturing zip file to your favorite PCB manufacturer for fabrication.
+
+[[file:./manufacturing/lick_detector_interface_v1.0.zip][./manufacturing/lick_detector_interface_v1.0.zip]]

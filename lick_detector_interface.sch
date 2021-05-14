@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 13
 Title "lick_detector_interface"
 Date ""
 Rev "1.0"
@@ -16,127 +16,46 @@ $EndDescr
 $Comp
 L lick_detector_interface:FIDUCIAL FID1
 U 1 1 5EFF6F31
-P 700 1150
-F 0 "FID1" H 778 1196 50  0000 L CNN
-F 1 "FIDUCIAL" H 778 1105 50  0000 L CNN
-F 2 "lick_detector_interface:FIDUCIAL" H 900 1150 50  0001 C CNN
-F 3 "" H 900 1150 50  0001 C CNN
-	1    700  1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:VAA #PWR010
-U 1 1 6092B668
-P 1700 1050
-F 0 "#PWR010" H 1700 900 50  0001 C CNN
-F 1 "VAA" H 1715 1223 50  0000 C CNN
-F 2 "" H 1700 1050 50  0001 C CNN
-F 3 "" H 1700 1050 50  0001 C CNN
-	1    1700 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:GND #PWR014
-U 1 1 6092BEB0
-P 1700 1450
-F 0 "#PWR014" H 1700 1200 50  0001 C CNN
-F 1 "GND" H 1705 1277 50  0000 C CNN
-F 2 "" H 1700 1450 50  0001 C CNN
-F 3 "" H 1700 1450 50  0001 C CNN
-	1    1700 1450
+P 1000 950
+F 0 "FID1" H 1078 996 50  0000 L CNN
+F 1 "FIDUCIAL" H 1078 905 50  0000 L CNN
+F 2 "lick_detector_interface:FIDUCIAL" H 1200 950 50  0001 C CNN
+F 3 "" H 1200 950 50  0001 C CNN
+	1    1000 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 2250 8150 2250
+	6450 1600 6400 1600
 Wire Wire Line
-	8200 2350 8150 2350
+	6450 1200 6400 1200
 Wire Wire Line
-	8200 2450 8150 2450
+	6450 1400 6400 1400
 Wire Wire Line
-	8200 2550 8150 2550
+	6450 1300 6400 1300
 Wire Wire Line
-	8200 2650 8150 2650
+	7050 1200 7100 1200
 Wire Wire Line
-	8200 2750 8150 2750
-Text Label 8150 2850 2    50   ~ 0
+	7050 1400 7100 1400
+Text Label 7100 1300 0    50   ~ 0
 INT1_0
-Text Label 8150 2750 2    50   ~ 0
+Text Label 7100 1400 0    50   ~ 0
 INT2_0
-Text Label 8150 2150 2    50   ~ 0
+Text Label 6400 1500 2    50   ~ 0
 ~CS_0
-Text Label 8150 2650 2    50   ~ 0
+Text Label 7100 1200 0    50   ~ 0
 MISO
-Text Label 8150 2550 2    50   ~ 0
+Text Label 6400 1300 2    50   ~ 0
 MOSI
-Text Label 8150 2450 2    50   ~ 0
+Text Label 6400 1400 2    50   ~ 0
 SCK
-$Comp
-L user_power:PWR_FLAG #FLG0101
-U 1 1 60997ECB
-P 1850 950
-F 0 "#FLG0101" H 1850 1025 50  0001 C CNN
-F 1 "PWR_FLAG" H 1850 1123 50  0000 C CNN
-F 2 "" H 1850 950 50  0001 C CNN
-F 3 "~" H 1850 950 50  0001 C CNN
-	1    1850 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L user_power:PWR_FLAG #FLG0102
-U 1 1 609992D6
-P 1750 1400
-F 0 "#FLG0102" H 1750 1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 1750 1573 50  0000 C CNN
-F 2 "" H 1750 1400 50  0001 C CNN
-F 3 "~" H 1750 1400 50  0001 C CNN
-	1    1750 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8200 2150 8150 2150
+	6450 1500 6400 1500
 Wire Wire Line
-	8200 2850 8150 2850
-Text Label 8150 2350 2    50   ~ 0
+	7050 1300 7100 1300
+Text Label 6400 1200 2    50   ~ 0
 VAA
-Text Label 8150 2250 2    50   ~ 0
+Text Label 6400 1600 2    50   ~ 0
 GND
-Text Label 1650 1100 2    50   ~ 0
-VAA
-Text Label 1650 1400 2    50   ~ 0
-GND
-Wire Wire Line
-	1650 1100 1700 1100
-Wire Wire Line
-	1700 1100 1700 1050
-Wire Wire Line
-	1650 1400 1700 1400
-Wire Wire Line
-	1700 1400 1700 1450
-Wire Wire Line
-	1700 1400 1750 1400
-Connection ~ 1700 1400
-Wire Wire Line
-	1700 1100 1850 1100
-Wire Wire Line
-	1850 1100 1850 950 
-Connection ~ 1700 1100
-$Comp
-L lick_detector_interface:CONN_FFC_8_VERT P?
-U 1 1 609DD3D3
-P 8500 2500
-F 0 "P?" H 8500 2950 60  0000 C CNN
-F 1 "CONN_FFC_8_VERT" V 8500 2500 60  0000 C CNN
-F 2 "lick_detector_interface:Molex_FFC_1x8_P0.5mm_Vertical" H 8500 3550 60  0001 C CNN
-F 3 "" H 8550 5250 60  0000 C CNN
-F 4 "Digi-Key" H 8500 3650 60  0001 C CNN "Vendor"
-F 5 "WM6757CT-ND" H 8500 3750 60  0001 C CNN "Vendor Part Number"
-F 6 "CONN FFC VERT 8POS 0.50MM SMD" H 8500 3850 60  0001 C CNN "Description"
-F 7 "1" H 8500 2500 50  0001 C CNN "Quantity"
-F 8 "Molex" H 8500 2500 50  0001 C CNN "Manufacturer"
-F 9 "0525590853" H 8500 2500 50  0001 C CNN "Manufacturer Part Number"
-	1    8500 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 1950 2500 1950
 Wire Wire Line
@@ -170,10 +89,10 @@ VAA
 Text Label 2500 1950 2    50   ~ 0
 GND
 $Comp
-L lick_detector_interface:TEENSY_4.1 TEENSY?
+L lick_detector_interface:TEENSY_4.1 TEENSY1
 U 1 1 609F082F
 P 3800 2600
-F 0 "TEENSY?" H 3800 3497 60  0000 C CNN
+F 0 "TEENSY1" H 3800 3497 60  0000 C CNN
 F 1 "TEENSY_4.1" H 3800 3391 60  0000 C CNN
 F 2 "lick_detector_interface:TEENSY_4.1" H 3800 3650 60  0001 C CNN
 F 3 "" H 3850 5350 60  0000 C CNN
@@ -321,4 +240,606 @@ Wire Wire Line
 NoConn ~ 5050 2250
 NoConn ~ 2550 2150
 NoConn ~ 2550 2050
+$Sheet
+S 6450 1100 600  600 
+U 609EC061
+F0 "detector_connector_0" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 1200 50 
+F3 "GND" U L 6450 1600 50 
+F4 "~CS" I L 6450 1500 50 
+F5 "SCK" I L 6450 1400 50 
+F6 "MOSI" I L 6450 1300 50 
+F7 "MISO" T R 7050 1200 50 
+F8 "INT2" O R 7050 1400 50 
+F9 "INT1" O R 7050 1300 50 
+$EndSheet
+Wire Wire Line
+	6450 2400 6400 2400
+Wire Wire Line
+	6450 2000 6400 2000
+Wire Wire Line
+	6450 2200 6400 2200
+Wire Wire Line
+	6450 2100 6400 2100
+Wire Wire Line
+	7050 2000 7100 2000
+Wire Wire Line
+	7050 2200 7100 2200
+Text Label 7100 2100 0    50   ~ 0
+INT1_1
+Text Label 7100 2200 0    50   ~ 0
+INT2_1
+Text Label 6400 2300 2    50   ~ 0
+~CS_1
+Text Label 7100 2000 0    50   ~ 0
+MISO
+Text Label 6400 2100 2    50   ~ 0
+MOSI
+Text Label 6400 2200 2    50   ~ 0
+SCK
+Wire Wire Line
+	6450 2300 6400 2300
+Wire Wire Line
+	7050 2100 7100 2100
+Text Label 6400 2000 2    50   ~ 0
+VAA
+Text Label 6400 2400 2    50   ~ 0
+GND
+$Sheet
+S 6450 1900 600  600 
+U 60A05B0A
+F0 "sheet60A05B0A" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 2000 50 
+F3 "GND" U L 6450 2400 50 
+F4 "~CS" I L 6450 2300 50 
+F5 "SCK" I L 6450 2200 50 
+F6 "MOSI" I L 6450 2100 50 
+F7 "MISO" T R 7050 2000 50 
+F8 "INT2" O R 7050 2200 50 
+F9 "INT1" O R 7050 2100 50 
+$EndSheet
+Wire Wire Line
+	6450 3200 6400 3200
+Wire Wire Line
+	6450 2800 6400 2800
+Wire Wire Line
+	6450 3000 6400 3000
+Wire Wire Line
+	6450 2900 6400 2900
+Wire Wire Line
+	7050 2800 7100 2800
+Wire Wire Line
+	7050 3000 7100 3000
+Text Label 7100 2900 0    50   ~ 0
+INT1_2
+Text Label 7100 3000 0    50   ~ 0
+INT2_2
+Text Label 6400 3100 2    50   ~ 0
+~CS_2
+Text Label 7100 2800 0    50   ~ 0
+MISO
+Text Label 6400 2900 2    50   ~ 0
+MOSI
+Text Label 6400 3000 2    50   ~ 0
+SCK
+Wire Wire Line
+	6450 3100 6400 3100
+Wire Wire Line
+	7050 2900 7100 2900
+Text Label 6400 2800 2    50   ~ 0
+VAA
+Text Label 6400 3200 2    50   ~ 0
+GND
+$Sheet
+S 6450 2700 600  600 
+U 60A0810C
+F0 "sheet60A0810C" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 2800 50 
+F3 "GND" U L 6450 3200 50 
+F4 "~CS" I L 6450 3100 50 
+F5 "SCK" I L 6450 3000 50 
+F6 "MOSI" I L 6450 2900 50 
+F7 "MISO" T R 7050 2800 50 
+F8 "INT2" O R 7050 3000 50 
+F9 "INT1" O R 7050 2900 50 
+$EndSheet
+Wire Wire Line
+	6450 4000 6400 4000
+Wire Wire Line
+	6450 3600 6400 3600
+Wire Wire Line
+	6450 3800 6400 3800
+Wire Wire Line
+	6450 3700 6400 3700
+Wire Wire Line
+	7050 3600 7100 3600
+Wire Wire Line
+	7050 3800 7100 3800
+Text Label 7100 3700 0    50   ~ 0
+INT1_3
+Text Label 7100 3800 0    50   ~ 0
+INT2_3
+Text Label 6400 3900 2    50   ~ 0
+~CS_3
+Text Label 7100 3600 0    50   ~ 0
+MISO
+Text Label 6400 3700 2    50   ~ 0
+MOSI
+Text Label 6400 3800 2    50   ~ 0
+SCK
+Wire Wire Line
+	6450 3900 6400 3900
+Wire Wire Line
+	7050 3700 7100 3700
+Text Label 6400 3600 2    50   ~ 0
+VAA
+Text Label 6400 4000 2    50   ~ 0
+GND
+$Sheet
+S 6450 3500 600  600 
+U 60A08126
+F0 "sheet60A08126" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 3600 50 
+F3 "GND" U L 6450 4000 50 
+F4 "~CS" I L 6450 3900 50 
+F5 "SCK" I L 6450 3800 50 
+F6 "MOSI" I L 6450 3700 50 
+F7 "MISO" T R 7050 3600 50 
+F8 "INT2" O R 7050 3800 50 
+F9 "INT1" O R 7050 3700 50 
+$EndSheet
+Wire Wire Line
+	6450 4800 6400 4800
+Wire Wire Line
+	6450 4400 6400 4400
+Wire Wire Line
+	6450 4600 6400 4600
+Wire Wire Line
+	6450 4500 6400 4500
+Wire Wire Line
+	7050 4400 7100 4400
+Wire Wire Line
+	7050 4600 7100 4600
+Text Label 7100 4500 0    50   ~ 0
+INT1_4
+Text Label 7100 4600 0    50   ~ 0
+INT2_4
+Text Label 6400 4700 2    50   ~ 0
+~CS_4
+Text Label 7100 4400 0    50   ~ 0
+MISO
+Text Label 6400 4500 2    50   ~ 0
+MOSI
+Text Label 6400 4600 2    50   ~ 0
+SCK
+Wire Wire Line
+	6450 4700 6400 4700
+Wire Wire Line
+	7050 4500 7100 4500
+Text Label 6400 4400 2    50   ~ 0
+VAA
+Text Label 6400 4800 2    50   ~ 0
+GND
+$Sheet
+S 6450 4300 600  600 
+U 60A0BEFD
+F0 "sheet60A0BEFD" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 4400 50 
+F3 "GND" U L 6450 4800 50 
+F4 "~CS" I L 6450 4700 50 
+F5 "SCK" I L 6450 4600 50 
+F6 "MOSI" I L 6450 4500 50 
+F7 "MISO" T R 7050 4400 50 
+F8 "INT2" O R 7050 4600 50 
+F9 "INT1" O R 7050 4500 50 
+$EndSheet
+Wire Wire Line
+	6450 5600 6400 5600
+Wire Wire Line
+	6450 5200 6400 5200
+Wire Wire Line
+	6450 5400 6400 5400
+Wire Wire Line
+	6450 5300 6400 5300
+Wire Wire Line
+	7050 5200 7100 5200
+Wire Wire Line
+	7050 5400 7100 5400
+Text Label 7100 5300 0    50   ~ 0
+INT1_5
+Text Label 7100 5400 0    50   ~ 0
+INT2_5
+Text Label 6400 5500 2    50   ~ 0
+~CS_5
+Text Label 7100 5200 0    50   ~ 0
+MISO
+Text Label 6400 5300 2    50   ~ 0
+MOSI
+Text Label 6400 5400 2    50   ~ 0
+SCK
+Wire Wire Line
+	6450 5500 6400 5500
+Wire Wire Line
+	7050 5300 7100 5300
+Text Label 6400 5200 2    50   ~ 0
+VAA
+Text Label 6400 5600 2    50   ~ 0
+GND
+$Sheet
+S 6450 5100 600  600 
+U 60A0BF17
+F0 "sheet60A0BF17" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 6450 5200 50 
+F3 "GND" U L 6450 5600 50 
+F4 "~CS" I L 6450 5500 50 
+F5 "SCK" I L 6450 5400 50 
+F6 "MOSI" I L 6450 5300 50 
+F7 "MISO" T R 7050 5200 50 
+F8 "INT2" O R 7050 5400 50 
+F9 "INT1" O R 7050 5300 50 
+$EndSheet
+Wire Wire Line
+	8000 1600 7950 1600
+Wire Wire Line
+	8000 1200 7950 1200
+Wire Wire Line
+	8000 1400 7950 1400
+Wire Wire Line
+	8000 1300 7950 1300
+Wire Wire Line
+	8600 1200 8650 1200
+Wire Wire Line
+	8600 1400 8650 1400
+Text Label 8650 1300 0    50   ~ 0
+INT1_6
+Text Label 8650 1400 0    50   ~ 0
+INT2_6
+Text Label 7950 1500 2    50   ~ 0
+~CS_6
+Text Label 8650 1200 0    50   ~ 0
+MISO
+Text Label 7950 1300 2    50   ~ 0
+MOSI
+Text Label 7950 1400 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 1500 7950 1500
+Wire Wire Line
+	8600 1300 8650 1300
+Text Label 7950 1200 2    50   ~ 0
+VAA
+Text Label 7950 1600 2    50   ~ 0
+GND
+$Sheet
+S 8000 1100 600  600 
+U 60A16C98
+F0 "sheet60A16C98" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 1200 50 
+F3 "GND" U L 8000 1600 50 
+F4 "~CS" I L 8000 1500 50 
+F5 "SCK" I L 8000 1400 50 
+F6 "MOSI" I L 8000 1300 50 
+F7 "MISO" T R 8600 1200 50 
+F8 "INT2" O R 8600 1400 50 
+F9 "INT1" O R 8600 1300 50 
+$EndSheet
+Wire Wire Line
+	8000 2400 7950 2400
+Wire Wire Line
+	8000 2000 7950 2000
+Wire Wire Line
+	8000 2200 7950 2200
+Wire Wire Line
+	8000 2100 7950 2100
+Wire Wire Line
+	8600 2000 8650 2000
+Wire Wire Line
+	8600 2200 8650 2200
+Text Label 8650 2100 0    50   ~ 0
+INT1_7
+Text Label 8650 2200 0    50   ~ 0
+INT2_7
+Text Label 7950 2300 2    50   ~ 0
+~CS_7
+Text Label 8650 2000 0    50   ~ 0
+MISO
+Text Label 7950 2100 2    50   ~ 0
+MOSI
+Text Label 7950 2200 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 2300 7950 2300
+Wire Wire Line
+	8600 2100 8650 2100
+Text Label 7950 2000 2    50   ~ 0
+VAA
+Text Label 7950 2400 2    50   ~ 0
+GND
+$Sheet
+S 8000 1900 600  600 
+U 60A16CB2
+F0 "sheet60A16CB2" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 2000 50 
+F3 "GND" U L 8000 2400 50 
+F4 "~CS" I L 8000 2300 50 
+F5 "SCK" I L 8000 2200 50 
+F6 "MOSI" I L 8000 2100 50 
+F7 "MISO" T R 8600 2000 50 
+F8 "INT2" O R 8600 2200 50 
+F9 "INT1" O R 8600 2100 50 
+$EndSheet
+Wire Wire Line
+	8000 3200 7950 3200
+Wire Wire Line
+	8000 2800 7950 2800
+Wire Wire Line
+	8000 3000 7950 3000
+Wire Wire Line
+	8000 2900 7950 2900
+Wire Wire Line
+	8600 2800 8650 2800
+Wire Wire Line
+	8600 3000 8650 3000
+Text Label 8650 2900 0    50   ~ 0
+INT1_8
+Text Label 8650 3000 0    50   ~ 0
+INT2_8
+Text Label 7950 3100 2    50   ~ 0
+~CS_8
+Text Label 8650 2800 0    50   ~ 0
+MISO
+Text Label 7950 2900 2    50   ~ 0
+MOSI
+Text Label 7950 3000 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 3100 7950 3100
+Wire Wire Line
+	8600 2900 8650 2900
+Text Label 7950 2800 2    50   ~ 0
+VAA
+Text Label 7950 3200 2    50   ~ 0
+GND
+$Sheet
+S 8000 2700 600  600 
+U 60A16CCC
+F0 "sheet60A16CCC" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 2800 50 
+F3 "GND" U L 8000 3200 50 
+F4 "~CS" I L 8000 3100 50 
+F5 "SCK" I L 8000 3000 50 
+F6 "MOSI" I L 8000 2900 50 
+F7 "MISO" T R 8600 2800 50 
+F8 "INT2" O R 8600 3000 50 
+F9 "INT1" O R 8600 2900 50 
+$EndSheet
+Wire Wire Line
+	8000 4000 7950 4000
+Wire Wire Line
+	8000 3600 7950 3600
+Wire Wire Line
+	8000 3800 7950 3800
+Wire Wire Line
+	8000 3700 7950 3700
+Wire Wire Line
+	8600 3600 8650 3600
+Wire Wire Line
+	8600 3800 8650 3800
+Text Label 8650 3700 0    50   ~ 0
+INT1_9
+Text Label 8650 3800 0    50   ~ 0
+INT2_9
+Text Label 7950 3900 2    50   ~ 0
+~CS_9
+Text Label 8650 3600 0    50   ~ 0
+MISO
+Text Label 7950 3700 2    50   ~ 0
+MOSI
+Text Label 7950 3800 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 3900 7950 3900
+Wire Wire Line
+	8600 3700 8650 3700
+Text Label 7950 3600 2    50   ~ 0
+VAA
+Text Label 7950 4000 2    50   ~ 0
+GND
+$Sheet
+S 8000 3500 600  600 
+U 60A16CE6
+F0 "sheet60A16CE6" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 3600 50 
+F3 "GND" U L 8000 4000 50 
+F4 "~CS" I L 8000 3900 50 
+F5 "SCK" I L 8000 3800 50 
+F6 "MOSI" I L 8000 3700 50 
+F7 "MISO" T R 8600 3600 50 
+F8 "INT2" O R 8600 3800 50 
+F9 "INT1" O R 8600 3700 50 
+$EndSheet
+Wire Wire Line
+	8000 4800 7950 4800
+Wire Wire Line
+	8000 4400 7950 4400
+Wire Wire Line
+	8000 4600 7950 4600
+Wire Wire Line
+	8000 4500 7950 4500
+Wire Wire Line
+	8600 4400 8650 4400
+Wire Wire Line
+	8600 4600 8650 4600
+Text Label 8650 4500 0    50   ~ 0
+INT1_10
+Text Label 8650 4600 0    50   ~ 0
+INT2_10
+Text Label 7950 4700 2    50   ~ 0
+~CS_10
+Text Label 8650 4400 0    50   ~ 0
+MISO
+Text Label 7950 4500 2    50   ~ 0
+MOSI
+Text Label 7950 4600 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 4700 7950 4700
+Wire Wire Line
+	8600 4500 8650 4500
+Text Label 7950 4400 2    50   ~ 0
+VAA
+Text Label 7950 4800 2    50   ~ 0
+GND
+$Sheet
+S 8000 4300 600  600 
+U 60A16D00
+F0 "sheet60A16D00" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 4400 50 
+F3 "GND" U L 8000 4800 50 
+F4 "~CS" I L 8000 4700 50 
+F5 "SCK" I L 8000 4600 50 
+F6 "MOSI" I L 8000 4500 50 
+F7 "MISO" T R 8600 4400 50 
+F8 "INT2" O R 8600 4600 50 
+F9 "INT1" O R 8600 4500 50 
+$EndSheet
+Wire Wire Line
+	8000 5600 7950 5600
+Wire Wire Line
+	8000 5200 7950 5200
+Wire Wire Line
+	8000 5400 7950 5400
+Wire Wire Line
+	8000 5300 7950 5300
+Wire Wire Line
+	8600 5200 8650 5200
+Wire Wire Line
+	8600 5400 8650 5400
+Text Label 8650 5300 0    50   ~ 0
+INT1_11
+Text Label 8650 5400 0    50   ~ 0
+INT2_11
+Text Label 7950 5500 2    50   ~ 0
+~CS_11
+Text Label 8650 5200 0    50   ~ 0
+MISO
+Text Label 7950 5300 2    50   ~ 0
+MOSI
+Text Label 7950 5400 2    50   ~ 0
+SCK
+Wire Wire Line
+	8000 5500 7950 5500
+Wire Wire Line
+	8600 5300 8650 5300
+Text Label 7950 5200 2    50   ~ 0
+VAA
+Text Label 7950 5600 2    50   ~ 0
+GND
+$Sheet
+S 8000 5100 600  600 
+U 60A16D1A
+F0 "sheet60A16D1A" 50
+F1 "detector_connector.sch" 50
+F2 "VAA" U L 8000 5200 50 
+F3 "GND" U L 8000 5600 50 
+F4 "~CS" I L 8000 5500 50 
+F5 "SCK" I L 8000 5400 50 
+F6 "MOSI" I L 8000 5300 50 
+F7 "MISO" T R 8600 5200 50 
+F8 "INT2" O R 8600 5400 50 
+F9 "INT1" O R 8600 5300 50 
+$EndSheet
+NoConn ~ 5050 1950
+$Comp
+L lick_detector_interface:FIDUCIAL FID2
+U 1 1 60A069AD
+P 1000 1150
+F 0 "FID2" H 1078 1196 50  0000 L CNN
+F 1 "FIDUCIAL" H 1078 1105 50  0000 L CNN
+F 2 "lick_detector_interface:FIDUCIAL" H 1200 1150 50  0001 C CNN
+F 3 "" H 1200 1150 50  0001 C CNN
+	1    1000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L lick_detector_interface:FIDUCIAL FID3
+U 1 1 60A0E7BD
+P 1000 1350
+F 0 "FID3" H 1078 1396 50  0000 L CNN
+F 1 "FIDUCIAL" H 1078 1305 50  0000 L CNN
+F 2 "lick_detector_interface:FIDUCIAL" H 1200 1350 50  0001 C CNN
+F 3 "" H 1200 1350 50  0001 C CNN
+	1    1000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L lick_detector_interface:FIDUCIAL FID4
+U 1 1 60A0E85B
+P 1000 1550
+F 0 "FID4" H 1078 1596 50  0000 L CNN
+F 1 "FIDUCIAL" H 1078 1505 50  0000 L CNN
+F 2 "lick_detector_interface:FIDUCIAL" H 1200 1550 50  0001 C CNN
+F 3 "" H 1200 1550 50  0001 C CNN
+	1    1000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L lick_detector_interface:MOUNTING_HOLE_4-40 MH1
+U 1 1 60A26746
+P 1550 1050
+F 0 "MH1" H 1608 1168 50  0000 L CNN
+F 1 "MOUNTING_HOLE_4-40" H 1608 1077 50  0000 L CNN
+F 2 "lick_detector_interface:MOUNTING_HOLE_4-40" H 1750 1050 50  0001 C CNN
+F 3 "" H 1750 1050 50  0001 C CNN
+	1    1550 1050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1050
+$Comp
+L lick_detector_interface:MOUNTING_HOLE_4-40 MH2
+U 1 1 60A2E645
+P 1550 1250
+F 0 "MH2" H 1608 1368 50  0000 L CNN
+F 1 "MOUNTING_HOLE_4-40" H 1608 1277 50  0000 L CNN
+F 2 "lick_detector_interface:MOUNTING_HOLE_4-40" H 1750 1250 50  0001 C CNN
+F 3 "" H 1750 1250 50  0001 C CNN
+	1    1550 1250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1250
+$Comp
+L lick_detector_interface:MOUNTING_HOLE_4-40 MH3
+U 1 1 60A36542
+P 1550 1450
+F 0 "MH3" H 1608 1568 50  0000 L CNN
+F 1 "MOUNTING_HOLE_4-40" H 1608 1477 50  0000 L CNN
+F 2 "lick_detector_interface:MOUNTING_HOLE_4-40" H 1750 1450 50  0001 C CNN
+F 3 "" H 1750 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1450
+$Comp
+L lick_detector_interface:MOUNTING_HOLE_4-40 MH4
+U 1 1 60A3661B
+P 1550 1650
+F 0 "MH4" H 1608 1768 50  0000 L CNN
+F 1 "MOUNTING_HOLE_4-40" H 1608 1677 50  0000 L CNN
+F 2 "lick_detector_interface:MOUNTING_HOLE_4-40" H 1750 1650 50  0001 C CNN
+F 3 "" H 1750 1650 50  0001 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1650
 $EndSCHEMATC
